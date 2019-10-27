@@ -1,0 +1,31 @@
+apply plugin: 'com.android.application'
+apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-android-extensions'
+
+// 안드로이드 설정
+android {
+    compileSdkVersion 28
+
+    defaultConfig {
+        applicationId 'boxresin.test.jetpacknavigationsample'
+        minSdkVersion 14
+        targetSdkVersion 28
+        versionCode 1
+        versionName '1.0.0'
+        vectorDrawables.useSupportLibrary = true
+    }
+}
+
+// 의존성
+dependencies {
+    // 로컬 JAR
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+
+    // 코틀린
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
+
+    // AndroidX
+    implementation 'androidx.appcompat:appcompat:1.1.0'
+    implementation 'androidx.core:core-ktx:1.1.0'
+    implementation 'androidx.constraintlayout:constraintlayout:1.1.3'
+}
