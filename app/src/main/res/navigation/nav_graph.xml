@@ -1,0 +1,14 @@
+<!-- 내비게이션 그래프 -->
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/mainFragment">
+
+    <!-- 메인 프래그먼트 -->
+    <fragment
+        android:id="@+id/mainFragment"
+        android:name="boxresin.test.jetpacknavigationsample.MainFragment"
+        android:label="Main"
+        tools:layout="@layout/fragment_main" />
+</navigation>
