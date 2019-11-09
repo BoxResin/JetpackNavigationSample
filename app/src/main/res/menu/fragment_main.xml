@@ -1,0 +1,19 @@
+<!-- 메인 메뉴 -->
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:ignore="HardcodedText">
+
+    <!-- 학교 검색 메뉴 -->
+    <item
+        android:id="@+id/action_search_school"
+        android:icon="@drawable/ic_baseline_search_24"
+        android:title="학교 검색"
+        app:showAsAction="always" />
+
+    <!-- 설정 메뉴 -->
+    <item
+        android:id="@+id/action_go_to_setting"
+        android:icon="@drawable/ic_baseline_settings_applications_24"
+        android:title="설정" />
+</menu>
