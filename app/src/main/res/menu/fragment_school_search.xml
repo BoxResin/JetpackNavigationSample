@@ -1,0 +1,14 @@
+<!-- 학교 검색 메뉴 -->
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:ignore="HardcodedText">
+
+    <!-- 검색창 -->
+    <item
+        android:id="@+id/action_search_school"
+        android:icon="@drawable/ic_baseline_search_24"
+        android:title="학교 검색"
+        app:actionViewClass="androidx.appcompat.widget.SearchView"
+        app:showAsAction="always|collapseActionView" />
+</menu>

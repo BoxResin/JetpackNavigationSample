@@ -11,4 +11,11 @@
         android:name="boxresin.test.jetpacknavigationsample.MainFragment"
         android:label="Main"
         tools:layout="@layout/fragment_main" />
+
+    <!-- 학교 검색 프래그먼트 -->
+    <fragment
+        android:id="@+id/schoolSearchFragment"
+        android:name="boxresin.test.jetpacknavigationsample.SchoolSearchFragment"
+        android:label="학교 검색"
+        tools:layout="@layout/fragment_school_search" />
 </navigation>
