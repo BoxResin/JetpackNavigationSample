@@ -10,7 +10,13 @@
         android:id="@+id/mainFragment"
         android:name="boxresin.test.jetpacknavigationsample.MainFragment"
         android:label="Main"
-        tools:layout="@layout/fragment_main" />
+        tools:layout="@layout/fragment_main">
+
+        <!-- 학교 검색하기 -->
+        <action
+            android:id="@+id/action_search_school"
+            app:destination="@id/schoolSearchFragment" />
+    </fragment>
 
     <!-- 학교 검색 프래그먼트 -->
     <fragment
