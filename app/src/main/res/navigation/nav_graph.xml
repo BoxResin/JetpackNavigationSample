@@ -15,7 +15,11 @@
         <!-- 학교 검색하기 -->
         <action
             android:id="@+id/action_search_school"
-            app:destination="@id/schoolSearchFragment" />
+            app:destination="@id/schoolSearchFragment"
+            app:enterAnim="@android:animator/fade_in"
+            app:exitAnim="@android:animator/fade_out"
+            app:popEnterAnim="@android:animator/fade_in"
+            app:popExitAnim="@android:animator/fade_out" />
     </fragment>
 
     <!-- 학교 검색 프래그먼트 -->
