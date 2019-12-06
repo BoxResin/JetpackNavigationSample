@@ -13,11 +13,14 @@ class SchoolSearchFragment : Fragment(R.layout.fragment_school_search) {
         // 툴바 메뉴 초기화
         view.toolbar.inflateMenu(R.menu.fragment_school_search)
         val searchMenuItem: MenuItem = view.toolbar.menu.findItem(R.id.action_search_school)
-        searchMenuItem.expandActionView() // 검색창 펼쳐진 상태로 놓기
+
+        // 검색창 펼쳐진 상태로 놓기
+        searchMenuItem.expandActionView()
+
+        // 검색창의 뒤로 가기를 누르면 프래그먼트가 닫히도록 처리
         searchMenuItem.setOnActionExpandListener(object : MenuItem.OnActionExpandListener {
             override fun onMenuItemActionExpand(item: MenuItem): Boolean = true
             override fun onMenuItemActionCollapse(item: MenuItem): Boolean {
-                // 검색창의 뒤로 가기를 누르면 프래그먼트가 닫히도록 처리
                 findNavController().popBackStack()
                 return false
             }
